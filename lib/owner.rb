@@ -54,4 +54,11 @@ class Owner
     end
     self.pets.each { |type, pet| pets[type] = [] }
   end
+  
+  def list_pets
+    fishes = self.pets[:fishes].size
+    dogs = self.pets[:dogs].size 
+    cats = self.pets[:cats].size
+    "I have #{fishes} fish, #{dogs} dog(s), and #{cats} cat(s)."
+  end
 end
